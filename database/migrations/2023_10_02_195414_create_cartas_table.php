@@ -14,6 +14,11 @@ return new class extends Migration
         Schema::create('cartas', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('plato');
+            $table->string('precio');
+            $table->string('postre');
+
+
         });
     }
 

@@ -14,6 +14,13 @@ return new class extends Migration
         Schema::create('ordenes', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('mesa');
+            $table->date('fecha');
+            $table->string('id_cartas');
+            $table->string('id_personals');
+            $table->string('id_clientes');
+            $table->string('notas');
+            $table->string('estado');
         });
     }
 
